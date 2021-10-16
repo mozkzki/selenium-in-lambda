@@ -2,8 +2,8 @@
 
 script_dir=$(cd $(dirname $0); pwd)
 
-rm $script_dir/headless-chromium
-rm $script_dir/chromedriver
+rm -f $script_dir/headless-chromium
+rm -f $script_dir/chromedriver
 
 # https://github.com/adieuadieu/serverless-chrome/issues/133
 
