@@ -140,3 +140,6 @@ docs/
 
 screenshot.png
 screenshot_tmp.png
+
+# chromedriver
+# headless-chromium
