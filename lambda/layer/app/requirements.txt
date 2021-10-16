@@ -1,0 +1,3 @@
+selenium == 3.141.0
+Chronyk == 1.0.1
+git+https://github.com/mozkzki/moz-image.git#egg=moz_image
