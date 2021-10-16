@@ -1,16 +1,18 @@
 # Selenium in Lambda
 
+**(注): M1 Mac (Appleシリコン) では Docker 周りがだめでcdk deploy等がうまく動かない**
+
 Lambda (Python) 上でSeleniumを動かすサンプル。
 
 - Lambda Layer ２つ
   - アプリの依存ライブラリ用
-    - [Selenium]()
-    - `Chronyk`
-    - [`moz-image`](https://github.com/mozkzki/moz-image)
+    - [Selenium](https://github.com/SeleniumHQ/selenium)
+    - [Chronyk](https://github.com/KoffeinFlummi/Chronyk)
+    - [moz-image](https://github.com/mozkzki/moz-image)
   - Chrome用
-    - serverless-chrome
-    - chromedriver
-    - 日本語フォント
+    - [serverless-chrome](https://github.com/adieuadieu/serverless-chrome)
+    - [chromedriver](https://chromedriver.chromium.org/)
+    - [日本語フォント (IPA)](https://moji.or.jp/ipafont/)
 - メインコード(`index.py`)をコンソール上で編集可能
 - CDK 利用 (CDK のコードは TypeScript)
 
@@ -18,7 +20,7 @@ Lambda (Python) 上でSeleniumを動かすサンプル。
 
 CDK周りは下記がベースなので最初にそっちを読む。
 
-- [mozkzki/cdk-lambda-simple](https://github.com/mozkzki/cdk-lambda-simple)
+- [mozkzki/cdk-lambda-sample](https://github.com/mozkzki/cdk-lambda-sample)
 
 ## CDK 周り
 
