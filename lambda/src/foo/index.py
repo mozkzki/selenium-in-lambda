@@ -22,10 +22,10 @@ def create_driver():
     options.binary_location = os.environ.get("CHROME_BINARY_LOCATION")
 
     # 基本
-    options.add_argument("--headless")
+    options.add_argument("--headless")  # local(Mac)でUI表示して確認する場合はコメントアウト
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
-    options.add_argument("--single-process")
+    options.add_argument("--single-process")  # local(Mac)でUI表示して確認する場合はコメントアウト
     # ログ関連
     options.add_argument("--enable-logging")
     options.add_argument("--v=99")

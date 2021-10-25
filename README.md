@@ -1,7 +1,5 @@
 # Selenium in Lambda
 
-**(注): M1 Mac (Appleシリコン) では Docker 周りがだめでcdk deploy等がうまく動かない**
-
 Lambda (Python) 上でSeleniumを動かすサンプル。
 
 - Lambda Layer ２つ
@@ -43,7 +41,7 @@ cdk deploy
 ### 実行
 
 ```sh
-aws lambda invoke --function-name foo response.json --log-type Tail --query 'LogResult' --output text | base64 -d
+aws lambda invoke --no-cli-auto-prompt --function-name foo response.json --log-type Tail --query 'LogResult' --output text | base64 -d
 # or
 # cdk.jsonがある場所で
 make start

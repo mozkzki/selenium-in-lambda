@@ -4,7 +4,4 @@ import { CdkWorkshopStackSimpleLambda } from "../lib/cdk-workshop-stack-simple-l
 
 const app = new cdk.App();
 
-new CdkWorkshopStackSimpleLambda(
-  app,
-  "CdkWorkshopStackSimpleLambda"
-);
+new CdkWorkshopStackSimpleLambda(app, "CdkWorkshopStackSimpleLambda");
